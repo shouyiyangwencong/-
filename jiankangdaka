@@ -1,4 +1,3 @@
-
 /**
  * @fileoverview Template to compose HTTP reqeuest.
  * 
@@ -6,8 +5,20 @@
 
 const url = `http://wx.gxws.cn/nCoVProject/InsertRepday_Info.html`;
 const method = `POST`;
-const headers = {"Accept": "text/html","Accept-Encoding": "gzip, deflate","Accept-Language": "zh-cn","Connection": "close","Content-Length": "1189","Content-Type": "application/x-www-form-urlencoded","Cookie": "JSESSIONID=2C14F1D1E7E01858ADECB5B1899F242E","Host": "wx.gxws.cn","Origin": "http://wx.gxws.cn","Referer": "http://wx.gxws.cn/nCoVProject/NcovProject/everyDayReport.jsp?user_type=2&user_name=%E6%9D%A8%E6%96%87%E8%81%AA&user_id=20173011017&openid=oSKFcuFzCcWPnrAz9dmND7Y1-k4U","User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.21(0x17001525) NetType/WIFI Language/zh_CN","X-Requested-With": "XMLHttpRequest",};
-const body = ``;
+const headers = {
+'X-Requested-With' : `XMLHttpRequest`,
+'Connection' : `close`,
+'Accept-Encoding' : `gzip, deflate`,
+'Content-Type' : `application/x-www-form-urlencoded`,
+'Origin' : `http://wx.gxws.cn`,
+'User-Agent' : `Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.21(0x17001525) NetType/WIFI Language/zh_CN`,
+'Cookie' : `JSESSIONID=2C14F1D1E7E01858ADECB5B1899F242E`,
+'Referer' : `http://wx.gxws.cn/nCoVProject/NcovProject/everyDayReport.jsp?user_type=2&user_name=%E6%9D%A8%E6%96%87%E8%81%AA&user_id=20173011017&openid=oSKFcuFzCcWPnrAz9dmND7Y1-k4U`,
+'Host' : `wx.gxws.cn`,
+'Accept-Language' : `zh-cn`,
+'Accept' : `text/html`
+};
+const body = `user_name=%E6%9D%A8%E6%96%87%E8%81%AA&user_id=20173011017&user_type=2&dateString=20210119&mySwitch_nearby=2&mySwitch_outlands=2&mySwitch=2&diagnostic_time1=&diagnostic_sp_time1=&change_condition=&checkbox=7&mySwitch_isolation=2&isolation_reason=&isolation_days=&mySwitch_left=2&if_outprovince_goback=&if_inprovince_goback=&ifinCollege=3&temperature=&temperature_p=&college_household=&college_student=&mySwitch_area_touch=2&return_schoold_time=&mySwitch_sp=2&check_condition=&hospital_sp=&if_home_observation=2&mySwitch_ifback=2&back_time=&home_observation_days=&mySwitch_friend_touch_code=2&mySwitch_family_touch_code=2&diagnostic_hospital_sp=&address_code=%E6%B2%B3%E5%8D%97%E7%9C%81+%E5%91%A8%E5%8F%A3%E5%B8%82+%E8%A5%BF%E5%8D%8E%E5%8E%BF&address_details=%E4%B8%9C%E7%8E%8B%E8%90%A5%E4%B9%A1%E6%9D%A8%E5%BA%84%E8%A1%8C%E6%94%BF%E6%9D%91%E6%9D%A8%E5%BA%84%E6%9D%91%E4%BA%8C%E7%BB%84&day_address_code=%E6%B2%B3%E5%8D%97%E7%9C%81+%E5%91%A8%E5%8F%A3%E5%B8%82+%E8%A5%BF%E5%8D%8E%E5%8E%BF&day_address_details=%E4%B8%9C%E7%8E%8B%E8%90%A5%E4%B9%A1%E6%9D%A8%E5%BA%84%E6%9D%91&if_backterritory=&area_return=xx%E7%9C%81xx%E5%B8%82xx%E5%8E%BF+xxx%E8%A1%97%E9%81%93xxx%E5%8F%B7&agree_return=%E5%90%A6`;
 
 const myRequest = {
     url: url,
