@@ -4,16 +4,9 @@
  * 
  */
 
-const url = `https://ir.zhangyue.com/zyuc/api/welfare/dailysign?idfa=5B114B62-94A8-4A65-B844-3633A369AD02&p1=4ABB5649072A4F15A716C66E43B4314A&p11=584&p12=&p16=iPhone10,2&p2=123002&p21=00003&p22=iOS,14.3&p25=11140058&p3=11140058&p4=501658&p5=1001&p6=AAAAAAAAAAAAAAAAAAAA&p7=AAAAAAAAAAAAAAA&p9=0&pc=10&rgt=&usr=S2222908&zysid=046bc5e5737ceec0d2f0c3c6cf803e5f&sign=QCzqg%2BYvLKM2TdRmJ29EOhaacJyn3HZJDagNK0uj1VkvsURW4Sz3VzTdihKiO1cJM266doszQ8YjFn1GLY/GaRcQI8zi6Kn7ZcGBsvTkZqFmlEXA2Rkyc8epaF92U2%2BLpC9BHj3ykuRSFnaqwQJ/lDQX8Le1XUMgbngqgRo64eQ%3D&timestamp=1611041463333&usr=S2222908`;
-const method = `GET`;
-const headers = {
-'Accept' : `*/*`,
-'Host' : `ir.zhangyue.com`,
-'Connection' : `keep-alive`,
-'Accept-Language' : `zh-Hans-TW;q=1, zh-Hant-TW;q=0.9`,
-'Accept-Encoding' : `gzip, deflate, br`,
-'User-Agent' : `iReader/1.14.0 (iPhone; iOS 14.3; Scale/3.00)`
-};
+const url = `http://wx.gxws.cn/nCoVProject/InsertRepday_Info.html`;
+const method = `POST`;
+const headers = {"Accept": "text/html","Accept-Encoding": "gzip, deflate","Accept-Language": "zh-cn","Connection": "close","Content-Length": "1189","Content-Type": "application/x-www-form-urlencoded","Cookie": "JSESSIONID=2C14F1D1E7E01858ADECB5B1899F242E","Host": "wx.gxws.cn","Origin": "http://wx.gxws.cn","Referer": "http://wx.gxws.cn/nCoVProject/NcovProject/everyDayReport.jsp?user_type=2&user_name=%E6%9D%A8%E6%96%87%E8%81%AA&user_id=20173011017&openid=oSKFcuFzCcWPnrAz9dmND7Y1-k4U","User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/7.0.21(0x17001525) NetType/WIFI Language/zh_CN","X-Requested-With": "XMLHttpRequest",};
 const body = ``;
 
 const myRequest = {
