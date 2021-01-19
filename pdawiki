@@ -9,7 +9,7 @@ const m = "GET" //或者 "POST" 最常用就这两种
 // 那就再定义一个变量 const b = "字符串请求消息体" 或 {"A":"a", "B":"b" }
 
 
-var myRequest = {url: u, method: m, headers: h, body: b};
+var myRequest = {url: u, method: m, headers: h,};
     // 如果还定义了变量b的话就再加后面这对body:b的键值
     
     
