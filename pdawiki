@@ -14,7 +14,7 @@ var myRequest = {url: u, method: m, headers: h,};
     
     
 $task.fetch(myRequest).then(response => {  
-  if(response.body.indexOf("成功签到的响应消息体内的某个关键词") != -1){
+  if(response.body.indexOf("恭喜你签到成功!") != -1){
     $notify("今日百科签到", "", "成功👍")
   }else {
     $notify("今日百科签到", "失败👇", "可能要更新一下请求头信息了")
