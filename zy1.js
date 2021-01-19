@@ -1,4 +1,4 @@
-const u = "https://ir.zhangyue.com/zyuc/api/welfare/dailysign?idfa=5B114B62-94A8-4A65-B844-3633A369AD02&p1=4ABB5649072A4F15A716C66E43B4314A&p11=584&p12=&p16=iPhone10,2&p2=123002&p21=00003&p22=iOS,14.3&p25=11140058&p3=11140058&p4=501658&p5=1001&p6=AAAAAAAAAAAAAAAAAAAA&p7=AAAAAAAAAAAAAAA&p9=0&pc=10&rgt=&usr=S2222908&zysid=046bc5e5737ceec0d2f0c3c6cf803e5f&sign=QCzqg%2BYvLKM2TdRmJ29EOhaacJyn3HZJDagNK0uj1VkvsURW4Sz3VzTdihKiO1cJM266doszQ8YjFn1GLY/GaRcQI8zi6Kn7ZcGBsvTkZqFmlEXA2Rkyc8epaF92U2%2BLpC9BHj3ykuRSFnaqwQJ/lDQX8Le1XUMgbngqgRo64eQ%3D&timestamp=1611041463333&usr=S2222908";
+const u = "https://ir.zhangyue.com/zyuc/api/welfare/dailysign";
 
 const h = {
 "Accept" : "*/*",
