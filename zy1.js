@@ -19,7 +19,7 @@ var myRequest = {url: u, method: m, headers: h};
     
     
 $task.fetch(myRequest).then(response => {  
-  if(response.body.indexOf(""msg": "success"") != -1){
+  if(response.body.indexOf("success") != -1){
     $notify("今日掌阅139签到", "", "成功👍")
   }if(response.body.indexOf("今日已签到，请明日再来") != -1){
     $notify("今日掌阅139已经签到过了", "", "")
