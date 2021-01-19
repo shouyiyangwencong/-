@@ -28,7 +28,7 @@ const myRequest = {
 };
 
 $task.fetch(myRequest).then(response => {
-    if(response.body.indexOf("succ") != -1){
+    if(response.body.indexOf("成功") != -1){
     $notify("今日健康打卡", "", "成功👍")
   }if(response.body.indexOf("fail") != -1){
     $notify("今日健康已经打卡过了", "", "打卡过了✌️")
