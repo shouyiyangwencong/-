@@ -28,9 +28,12 @@ const myRequest = {
 };
 
 $task.fetch(myRequest).then(response => {
-    console.log(response.statusCode + "\n\n" + response.body);
-    $done();
-}, reason => {
-    console.log(reason.error);
-    $done();
-});
+    if(response.body.indexOf("succ") != -1){
+    $notify("今日健康打卡", "", "成功👍")
+  }if(response.body.indexOf("fail") != -1){
+    $notify("今日健康已经打卡过了", "", "打卡过了✌️")
+  }else {
+    $notify("今日健康打卡", "失败👇", "可能要更新一下请求头信息了")
+  }  
+}
+)
