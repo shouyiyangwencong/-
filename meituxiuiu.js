@@ -7,7 +7,9 @@
 [mitm]
 hostname = api.xiuxiu.meitu.com
 
-*/var body = $response.body;
+*/
+
+var body = $response.body;
 var url = $request.url;
 
 const path1 = "\/v1\/user\/show.json";
