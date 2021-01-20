@@ -10,3 +10,4 @@ hostname = api.xiuxiu.meitu.com
 */
 var body = $response.body; //声明一个变量body并以响应消息体赋值
 body=body.replacebody=body.replace(/vip_type\":\d/g,'vip_type":1');
+$done({body});
