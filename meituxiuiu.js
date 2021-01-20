@@ -10,15 +10,5 @@ hostname = api.xiuxiu.meitu.com
 */
 
 var body = $response.body;
-var url = $request.url;
-
-const path1 = "\/v1\/user\/show.json";
-
-let obj = JSON.parse(body);
-
-if (url.indexOf(path1) != -1) {
-	obj.data["vip_type"] = 1;
-	body = JSON.stringify(obj);  
- }
-
+body = $response.body.replace(/"vip_type":0/g, '"vip_type":1');
 $done({body});
