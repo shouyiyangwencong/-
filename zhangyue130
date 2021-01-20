@@ -24,9 +24,12 @@ const myRequest = {
 };
 
 $task.fetch(myRequest).then(response => {
-    console.log(response.statusCode + "\n\n" + response.body);
-    $done();
-}, reason => {
-    console.log(reason.error);
-    $done();
-});
+if(response.body.indexOf("success") != -1){
+    $notify("今日掌阅精选130签到", "", "成功👍")
+  }if(response.body.indexOf("3") != -1){
+    $notify("今日掌阅精选130已经签到过了", "", "签过了🤞")
+  }else {
+    $notify("今日掌阅精选130签到", "失败👇", "可能要更新一下请求头信息了")
+  }  
+}
+)
