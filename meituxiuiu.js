@@ -9,7 +9,5 @@ hostname = api.xiuxiu.meitu.com
 
 */
 let obj = JSON.parse($response.body);
-obj = {
-     "vip_type": 1,
-}
+obj = {"vip_type":1,}
 $done({body: JSON.stringify(obj)};
