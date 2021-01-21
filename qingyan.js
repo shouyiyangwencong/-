@@ -20,4 +20,4 @@ function key() {
  $done({body:JSON.stringify(obj)});
 }
 // 最终只需用户在结尾按格式录入key("键1@键2……", [值1，值2……])
-key("flag@end_time@start_time", [true, 1639446065, 1605316215])
+key("flag@"end_time"@"start_time"", [true, 1639446065, 1605316215])
