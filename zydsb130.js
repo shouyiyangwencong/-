@@ -25,7 +25,7 @@ const myRequest = {
 $task.fetch(myRequest).then(response => {
     if(response.body.indexOf("success") != -1){
     $notify("掌阅精选130读书币兑换", "", "成功👍")
-  }if(response.body.indexOf("没有") != -1){
+  }if(response.body.indexOf("511") != -1){
     $notify("掌阅精选130", "", "没有多余的读书币可以兑换")
   }else {
     $notify("掌阅精选130读书币兑换", "失败👇", "可能要更新一下请求头信息了")
