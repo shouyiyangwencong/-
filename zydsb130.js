@@ -23,9 +23,12 @@ const myRequest = {
 };
 
 $task.fetch(myRequest).then(response => {
-    console.log(response.statusCode + "\n\n" + response.body);
-    $done();
-}, reason => {
-    console.log(reason.error);
-    $done();
-});
+    if(response.body.indexOf("success") != -1){
+    $notify("掌阅精选130读书币兑换", "", "成功👍")
+  }if(response.body.indexOf("没有") != -1){
+    $notify("掌阅精选130", "", "没有多余的读书币可以兑换")
+  }else {
+    $notify("掌阅精选130读书币兑换", "失败👇", "可能要更新一下请求头信息了")
+  }  
+}
+)
