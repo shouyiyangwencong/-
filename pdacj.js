@@ -29,7 +29,7 @@ const myRequest = {
 };
 
 $task.fetch(myRequest).then(response => {  
-  if(response.body.indexOf("恭喜") != -1){
+  if(response.body.indexOf("congrats") != -1){
     $notify("今日pdawiki抽奖", "成功👍", "具体奖励请到网站查看")
   }if(response.body.indexOf("明天") != -1){
     $notify("今日pdawiki抽奖", "失败👇🏻", "今日抽奖次数已经用完🤞")
