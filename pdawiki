@@ -28,12 +28,9 @@ const myRequest = {
 };
 
 $task.fetch(myRequest).then(response => {
-   if(response.body.indexOf("恭喜你签到成功!") != -1){
-    $notify("今日百科签到", "", "成功👍")
-   if(response.body.indexOf("请明天再来!") != -1){
-    $notify("今日百科签到", "", "已经签到了👍")
-  }else {
-    $notify("今日百科签到", "失败👇", "可能要更新一下请求头信息了")
-  }  
-}
-)
+    console.log(response.statusCode + "\n\n" + response.body);
+    $done();
+}, reason => {
+    console.log(reason.error);
+    $done();
+});
