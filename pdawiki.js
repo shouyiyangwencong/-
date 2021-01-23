@@ -27,10 +27,13 @@ const myRequest = {
     body: body
 };
 
-$task.fetch(myRequest).then(response => {
-    console.log(response.statusCode + "\n\n" + response.body);
-    $done();
-}, reason => {
-    console.log(reason.error);
-    $done();
-});
+$task.fetch(myRequest).then(response => {  
+  if(response.body.indexOf("恭喜你签到成功!") != -1){
+    $notify("今日pdawiki签到", "", "成功👍")
+  }if(response.body.indexOf("明日") != -1){
+    $notify("今日pdawiki签到", "", "签过了🤞")
+  }else {
+    $notify("今日pdawiki签到", "失败👇", "可能要更新一下请求头信息了")
+  }  
+}
+)
