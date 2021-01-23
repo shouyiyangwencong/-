@@ -30,7 +30,7 @@ const myRequest = {
 $task.fetch(myRequest).then(response => {  
   if(response.body.indexOf("恭喜你签到成功!") != -1){
     $notify("今日pdawiki签到", "", "成功👍")
-  }if(response.body.indexOf("明日") != -1){
+  }if(response.body.indexOf("明天") != -1){
     $notify("今日pdawiki签到", "", "签过了🤞")
   }else {
     $notify("今日pdawiki签到", "失败👇", "可能要更新一下请求头信息了")
