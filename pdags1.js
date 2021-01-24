@@ -26,7 +26,6 @@ const myRequest = {
 };
 
 $task.fetch(myRequest).then(response => {
-$task.fetch(myRequest).then(response => {
   if(response.body.indexOf("领取到") != -1){
     $notify("今日pdawiki第一个时间段的果实", "", "领取成功👍")
   }if(response.body.indexOf("已领取") != -1){
