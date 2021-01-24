@@ -29,7 +29,7 @@ $task.fetch(myRequest).then(response => {
   if(response.body.indexOf("恭喜") != -1){
     $notify("今日pdawiki浇水", "", "成功👍")
   }if(response.body.indexOf("明日") != -1){
-    $notify("今日pdawiki浇水", "失败👇🏻", "今日浇过了🤞")
+    $notify("今日pdawiki浇水", "失败👇🏻", "今日浇过水了🤞")
   }else {
     $notify("今日pdawiki浇水", "失败👇", "可能要更新一下请求头信息了")
   }  
