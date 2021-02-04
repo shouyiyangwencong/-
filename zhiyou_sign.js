@@ -31,9 +31,9 @@ const myRequest = {
 $task.fetch(myRequest).then(response => {
   
   if(response.body.indexOf("成功") != -1){
-    $notify("今日智友签到", "", "成功")
+    $notify("今日智友签到", "", "成功✌️")
   }if(response.body.indexOf("明天") != -1){
-    $notify("今日智友已经签到过了", "", "")
+    $notify("今日智友已经签到过了", "", "签过到了👌")
   }else {
     $notify("今日智友签到", "失败", "可能要更新一下cookie信息了")
   }  
