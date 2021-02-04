@@ -1,3 +1,8 @@
+轻颜相机圈X规则by守一
+转载请注明出处
+[rewrite_local]
+https://commerce-api.faceu.mobi/commerce/v1/subscription/user_info url script-response-body https://raw.githubusercontent.com/shouyiyangwencong/-/main/qingyan.js
+hostname = commerce-api.faceu.mobi
 */
 
 var body = $response.body;
