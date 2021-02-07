@@ -32,8 +32,6 @@ if(response.body.indexOf("成功") != -1){
     $notify("今日蜗牛读书签到", "", "成功👍")
   }if(response.body.indexOf("签过") != -1){
     $notify("今日蜗牛读书签到", "失败👇🏻", "今天已经签过到了🤞")
-  }else {
-    $notify("今日蜗牛读书签到", "失败👇", "可能要更新一下请求头信息了")
-  }  
+  }
 }
 )
