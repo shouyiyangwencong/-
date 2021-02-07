@@ -35,8 +35,6 @@ $task.fetch(myRequest).then(response => {
     $notify("今日pdawiki抽奖", "失败👇🏻", "今日抽奖次数已经用完🤞")
   }if(response.body.indexOf("空") != -1){
     $notify("今日pdawiki抽奖", "成功👍", "很遗憾你什么也没抽到")
-  }else {
-    $notify("今日pdawiki抽奖", "失败👇", "可能要更新一下请求头信息了")
-  }  
+  }
 }
 )
