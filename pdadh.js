@@ -28,7 +28,7 @@ const myRequest = {
 $task.fetch(myRequest).then(response => {  
   if(response.body.indexOf("恭喜")&&("跳转") != -1){
     $notify("pdawiki兑换米粒", "", "成功[庆祝]")
-  }if(response.body.indexOf("还差")&& ("返回") != -1){
+  }if(response.body.indexOf("还差")&&("返回") != -1){
     $notify("pdawiki兑换米粒", "失败👇🏻", "果实暂时不够🤞")
   }else {
     $notify("pdawiki兑换米粒", "失败👇", "可能要更新一下请求头信息了")
