@@ -3,11 +3,19 @@
 [rewrite_local]
 http://zhiyueclass.com/resource/fg/course-library/relation-resource url script-response-body https://raw.githubusercontent.com/shouyiyangwencong/-/main/zhiyue.js
 hostname = zhiyueclass.com
+
 */
 
 var body = $response.body;
-var obj = JSON.parse(body);
+var url = $request.url;
 
-obj.priceOption = 0;
-body = JSON.stringify(obj);
+const path1 = '\/resource\/fg\/course-library\/relation-resource';
+
+let obj = JSON.parse(body);
+
+if (url.indexOf(path1) != -1) {
+	obj.data["priceOption"] = 0;
+	body = JSON.stringify(obj);  
+ }
+
 $done({body});
