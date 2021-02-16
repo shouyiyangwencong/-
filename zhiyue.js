@@ -14,7 +14,7 @@ const path1 = '\/resource\/fg\/course-library\/relation-resource';
 let obj = JSON.parse(body);
 
 if (url.indexOf(path1) != -1) {
-	obj.data["priceoption"] = 0;
+	obj.data["priceOption"] = 0;
 	body = JSON.stringify(obj);  
  }
 
